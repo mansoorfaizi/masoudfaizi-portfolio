@@ -8,48 +8,59 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 9% 15%;
+    /* Tech-focused dark theme */
+    --background: 217 19% 8%;
+    --foreground: 213 31% 91%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 9% 15%;
+    --card: 217 19% 12%;
+    --card-foreground: 213 31% 91%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 9% 15%;
+    --popover: 217 19% 12%;
+    --popover-foreground: 213 31% 91%;
 
-    --primary: 221 83% 53%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 204 100% 50%;
+    --primary-foreground: 217 19% 8%;
 
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 220 9% 15%;
+    --secondary: 217 19% 15%;
+    --secondary-foreground: 213 31% 91%;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 217 19% 15%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 221 83% 75%;
-    --accent-foreground: 220 9% 15%;
+    --accent: 177 100% 50%;
+    --accent-foreground: 217 19% 8%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: 213 31% 91%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 221 83% 53%;
+    --border: 217 19% 18%;
+    --input: 217 19% 18%;
+    --ring: 204 100% 50%;
 
-    /* Professional Portfolio Design Tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(221, 83%, 53%) 0%, hsl(221, 83%, 65%) 100%);
-    --card-shadow: 0 4px 6px -1px hsl(220, 9%, 46%, 0.1), 0 2px 4px -1px hsl(220, 9%, 46%, 0.06);
-    --card-shadow-hover: 0 10px 15px -3px hsl(220, 9%, 46%, 0.1), 0 4px 6px -2px hsl(220, 9%, 46%, 0.05);
+    /* Tech-focused Design Tokens */
+    --tech-gradient: linear-gradient(135deg, hsl(204, 100%, 50%) 0%, hsl(177, 100%, 50%) 100%);
+    --tech-glow: 0 0 20px hsl(204, 100%, 50%, 0.3);
+    --tech-glow-accent: 0 0 20px hsl(177, 100%, 50%, 0.3);
+    --card-shadow: 0 8px 32px hsl(204, 100%, 50%, 0.1);
+    --card-shadow-hover: 0 16px 48px hsl(204, 100%, 50%, 0.2);
+    --card-border: 1px solid hsl(217, 19%, 18%);
+    --card-border-glow: 1px solid hsl(204, 100%, 50%, 0.3);
     
-    --text-primary: hsl(220, 9%, 15%);
-    --text-secondary: hsl(220, 9%, 46%);
-    --text-on-primary: hsl(0, 0%, 100%);
+    --nav-background: hsl(217, 19%, 8%, 0.8);
+    --nav-border: hsl(217, 19%, 18%);
     
-    --surface-elevated: hsl(0, 0%, 100%);
-    --surface-subtle: hsl(220, 14%, 98%);
+    --text-primary: hsl(213, 31%, 91%);
+    --text-secondary: hsl(215, 20%, 65%);
+    --text-accent: hsl(204, 100%, 50%);
+    --text-neon: hsl(177, 100%, 50%);
+    
+    --surface-elevated: hsl(217, 19%, 12%);
+    --surface-subtle: hsl(217, 19%, 10%);
+    --surface-accent: hsl(217, 19%, 15%);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-glow: all 0.2s ease-in-out;
 
     --radius: 0.5rem;
 
@@ -124,42 +135,125 @@ All colors MUST be HSL.
 }
 
 @layer components {
-  .hero-card {
+  .tech-card {
     background: var(--surface-elevated);
+    border: var(--card-border);
     box-shadow: var(--card-shadow);
     transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
   }
   
-  .hero-card:hover {
+  .tech-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, hsl(204, 100%, 50%, 0.1), transparent);
+    transition: left 0.5s ease;
+  }
+  
+  .tech-card:hover::before {
+    left: 100%;
+  }
+  
+  .tech-card:hover {
+    border: var(--card-border-glow);
     box-shadow: var(--card-shadow-hover);
-    transform: translateY(-2px);
-  }
-  
-  .section-card {
-    background: var(--surface-elevated);
-    box-shadow: var(--card-shadow);
-    transition: var(--transition-smooth);
-  }
-  
-  .section-card:hover {
-    box-shadow: var(--card-shadow-hover);
+    transform: translateY(-4px);
   }
   
   .gradient-text {
-    background: var(--hero-gradient);
+    background: var(--tech-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    animation: gradient-pulse 3s ease-in-out infinite;
   }
   
-  .hero-button {
-    background: var(--hero-gradient);
-    color: var(--text-on-primary);
+  .tech-button {
+    background: var(--tech-gradient);
+    color: var(--text-primary);
     transition: var(--transition-bounce);
+    position: relative;
+    overflow: hidden;
   }
   
-  .hero-button:hover {
-    transform: translateY(-1px);
-    box-shadow: var(--card-shadow-hover);
+  .tech-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.3s ease;
+  }
+  
+  .tech-button:hover::before {
+    left: 100%;
+  }
+  
+  .tech-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--tech-glow);
+  }
+  
+  .tech-glow {
+    box-shadow: var(--tech-glow);
+  }
+  
+  .tech-glow-accent {
+    box-shadow: var(--tech-glow-accent);
+  }
+  
+  .circuit-pattern {
+    background-image: 
+      radial-gradient(circle at 25% 25%, hsl(204, 100%, 50%, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, hsl(177, 100%, 50%, 0.1) 0%, transparent 50%);
+    background-size: 100px 100px;
+    animation: circuit-move 20s linear infinite;
+  }
+  
+  .skill-card {
+    background: var(--surface-elevated);
+    border: var(--card-border);
+    transition: var(--transition-smooth);
+    cursor: pointer;
+  }
+  
+  .skill-card:hover {
+    border: var(--card-border-glow);
+    transform: scale(1.05);
+    box-shadow: var(--tech-glow);
+  }
+  
+  .nav-glass {
+    background: var(--nav-background);
+    backdrop-filter: blur(10px);
+    border-bottom: var(--nav-border);
+  }
+}
+
+@layer utilities {
+  @keyframes gradient-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+  }
+  
+  @keyframes circuit-move {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100px 100px; }
+  }
+  
+  @keyframes glow-pulse {
+    0%, 100% { box-shadow: var(--tech-glow); }
+    50% { box-shadow: var(--tech-glow-accent); }
+  }
+  
+  .animate-glow {
+    animation: glow-pulse 2s ease-in-out infinite;
   }
 }
