@@ -1,73 +1,132 @@
-# Welcome to your Lovable project
+# Masoud Faizi - Portfolio Website
 
-## Project info
+A modern, responsive portfolio website showcasing my professional journey as a Computer Science Professional, Software Developer, and Lecturer.
 
-**URL**: https://lovable.dev/projects/3e477201-4ec3-42e3-a3c9-77d2da4501a5
+## 🌐 Live Demo
 
-## How can I edit this code?
+Visit the live website: [masoudfaizi.urooj-tech.com](https://masoudfaizi.urooj-tech.com)
 
-There are several ways of editing your application.
+## 🚀 About
 
-**Use Lovable**
+This portfolio represents my diverse career spanning software development, telecommunications engineering, education, and content moderation across international markets. Built with modern web technologies to provide an engaging and professional showcase of my skills and projects.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3e477201-4ec3-42e3-a3c9-77d2da4501a5) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React 18 with TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Shadcn/ui
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **Deployment**: Production-ready build
 
-**Use your preferred IDE**
+## ✨ Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Responsive Design**: Optimized for all devices and screen sizes
+- **Modern UI/UX**: Clean, professional interface with smooth animations
+- **Interactive Sections**: 
+  - Hero section with professional introduction
+  - Experience timeline with career highlights
+  - Technical skills showcase
+  - Featured projects portfolio
+  - Contact information
+- **Performance Optimized**: Fast loading and smooth navigation
+- **SEO Friendly**: Proper meta tags and semantic HTML
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📂 Project Structure
 
-Follow these steps:
+```
+src/
+├── components/          # React components
+│   ├── ui/             # Reusable UI components
+│   ├── Hero.tsx        # Landing section
+│   ├── About.tsx       # About section
+│   ├── Experience.tsx  # Professional experience
+│   ├── Skills.tsx      # Technical expertise
+│   ├── Projects.tsx    # Featured projects
+│   └── Contact.tsx     # Contact information
+├── assets/             # Static assets
+├── lib/                # Utility functions
+└── pages/              # Page components
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🎯 Sections Overview
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Professional Experience
+- **Social Media Content Moderator** - Majorel Berlin GmbH
+- **Computer Science Lecturer** - Herat University
+- **VAS/NSS Engineer** - Telecommunications Industry
+- **Software Developer** - Herat Host IT Services Company
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Featured Projects
+- **Hasa Book Store** - Django/React e-commerce platform
+- **Hospital Management System** - Comprehensive healthcare solution
+- **Inventory Management System** - Real-time stock tracking
+- **E-commerce Platform** - Scalable online retail solution
+- **SHALL Organization Website** - Non-profit organization platform
+- **Afghan Cosmos Website** - Corporate digital presence
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Technical Skills
+- **Frontend**: HTML5, CSS3, JavaScript, React, TypeScript
+- **Backend**: PHP/Laravel, Node.js, Python, Golang
+- **Databases**: MySQL, PostgreSQL, MongoDB, Redis
+- **DevOps**: Git, Docker, Linux, AWS
+- **Specialized**: Big Data Analytics, Teaching, Telecommunications
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/masoudfaizi/masoudfaizi-portfolio.git
+cd masoudfaizi-portfolio
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start development server
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Build for production
+```bash
+npm run build
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📱 Responsive Design
 
-**Use GitHub Codespaces**
+The portfolio is fully responsive and optimized for:
+- Desktop (1024px+)
+- Tablet (768px - 1023px)
+- Mobile (320px - 767px)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🔧 Customization
 
-## What technologies are used for this project?
+The project uses Tailwind CSS for styling, making it easy to customize:
+- Colors and themes in `tailwind.config.js`
+- Component styles in individual component files
+- Global styles in `src/index.css`
 
-This project is built with:
+## 📄 License
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+This project is open source and available under the [MIT License](LICENSE).
 
-## How can I deploy this project?
+## 📞 Contact
 
-Simply open [Lovable](https://lovable.dev/projects/3e477201-4ec3-42e3-a3c9-77d2da4501a5) and click on Share -> Publish.
+**Masoud Faizi**
+- 🌐 Website: [masoudfaizi.urooj-tech.com](https://masoudfaizi.urooj-tech.com)
+- 💼 LinkedIn: [linkedin.com/in/masoud-faizi-b16611135](http://linkedin.com/in/masoud-faizi-b16611135)
+- 🐙 GitHub: [github.com/masoudfaizi](https://github.com/masoudfaizi)
+- 📍 Location: Berlin, Germany
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+*Built with ❤️ by Masoud Faizi*
