@@ -61,7 +61,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Portfolio design tokens
+				'surface-elevated': 'var(--surface-elevated)',
+				'surface-subtle': 'var(--surface-subtle)',
+				'text-primary': 'var(--text-primary)',
+				'text-secondary': 'var(--text-secondary)',
+				'text-on-primary': 'var(--text-on-primary)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
