@@ -6,49 +6,60 @@ import { Github, ExternalLink, FolderOpen, Star, GitFork, Code2 } from "lucide-r
 const Projects = () => {
   const featuredProjects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution built with modern technologies, featuring user authentication, payment processing, and admin dashboard.",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe API"],
-      category: "Web Application",
+      title: "Hasa Book Store",
+      description: "Built with Django and React, this modern online bookstore offers an intuitive browsing experience and secure PayPal payment integration, with HesabPay support under development for enhanced transaction flexibility.",
+      technologies: ["Django", "React", "PayPal API", "HesabPay"],
+      category: "E-commerce",
+      status: "Current",
+      link: "https://hasabookstore.com/"
+    },
+    {
+      title: "Hospital Management System",
+      description: "A high-performance solution built with Django and React for Turkish Clinic. The platform integrates modules for reception, doctors, nurses, diagnostics (X-ray, laboratory, echo, ultrasound), finance, HR, beauty, and operations—delivering a seamless and humanized experience for both patients and staff.",
+      technologies: ["Django", "React", "PostgreSQL", "Medical Systems"],
+      category: "Healthcare",
       status: "Production Ready",
-      stars: 45,
-      forks: 12
+      link: "https://front.turkishclinic.af/"
     },
     {
-      title: "Data Analytics Dashboard",
-      description: "Interactive dashboard for analyzing large datasets with real-time visualizations and advanced filtering capabilities.",
-      technologies: ["Python", "Django", "D3.js", "PostgreSQL"],
-      category: "Data Science",
-      status: "In Development",
-      stars: 28,
-      forks: 8
+      title: "Inventory Management System",
+      description: "Developed with Django and React, this solution streamlines stock tracking, procurement, and sales for Maihan Nickel with real-time monitoring, automated alerts, and detailed reporting.",
+      technologies: ["Django", "React", "Real-time Monitoring", "Reporting"],
+      category: "Business Management",
+      status: "Production Ready",
+      link: "https://maihannickel.com"
     },
     {
-      title: "Telecom Network Monitor",
-      description: "Network monitoring system for telecommunications infrastructure with real-time alerts and performance metrics.",
-      technologies: ["Go", "React", "InfluxDB", "Docker"],
-      category: "Infrastructure",
-      status: "Enterprise",
-      stars: 67,
-      forks: 23
+      title: "E-commerce Platform",
+      description: "Developed with Django and React, this bespoke solution streamlines product management and real-time order tracking, offering a seamless and scalable online retail experience.",
+      technologies: ["Django", "React", "Order Tracking", "Product Management"],
+      category: "E-commerce",
+      status: "Production Ready",
+      link: "https://asanbawar.com/"
     },
     {
-      title: "Educational Platform",
-      description: "Online learning management system with interactive courses, progress tracking, and collaborative features.",
-      technologies: ["Laravel", "Vue.js", "MySQL", "Redis"],
-      category: "Education",
+      title: "Website for Shall Organization",
+      description: "Crafted with Django and React, this official website effectively represents SHALL Organization's mission in education, healthcare, and social initiatives. The platform's intuitive design and secure backend enhance accessibility, facilitate donations, and foster community engagement.",
+      technologies: ["Django", "React", "Donation System", "CMS"],
+      category: "Non-profit",
       status: "Active",
-      stars: 156,
-      forks: 42
+      link: "https://shallafg.org/"
+    },
+    {
+      title: "Afghan Cosmos Website",
+      description: "Developed with Django and React, this professional website elevates Afghan Cosmos' digital presence with a modern, responsive design and dynamic content management, ensuring an engaging experience across all devices.",
+      technologies: ["Django", "React", "Responsive Design", "CMS"],
+      category: "Corporate Website",
+      status: "Active",
+      link: "https://afghancosmos.com/"
     }
   ];
 
   const getStatusColor = (status: string) => {
     switch (status) {
       case "Production Ready": return "bg-green-500/10 text-green-400 border-green-500/20";
-      case "In Development": return "bg-yellow-500/10 text-yellow-400 border-yellow-500/20";
-      case "Enterprise": return "bg-purple-500/10 text-purple-400 border-purple-500/20";
-      case "Active": return "bg-blue-500/10 text-blue-400 border-blue-500/20";
+      case "Current": return "bg-blue-500/10 text-blue-400 border-blue-500/20";
+      case "Active": return "bg-purple-500/10 text-purple-400 border-purple-500/20";
       default: return "bg-gray-500/10 text-gray-400 border-gray-500/20";
     }
   };
@@ -70,7 +81,7 @@ const Projects = () => {
         </div>
         
         {/* Featured Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {featuredProjects.map((project, index) => (
             <Card key={index} className="tech-card border-0 rounded-2xl group">
               <CardHeader>
@@ -106,35 +117,22 @@ const Projects = () => {
                   ))}
                 </div>
                 
-                <div className="flex items-center justify-between pt-4">
-                  <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-                    <div className="flex items-center">
-                      <Star className="h-4 w-4 mr-1" />
-                      {project.stars}
-                    </div>
-                    <div className="flex items-center">
-                      <GitFork className="h-4 w-4 mr-1" />
-                      {project.forks}
-                    </div>
-                  </div>
-                  
-                  <div className="flex gap-2">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="rounded-lg border-border hover:border-primary hover:bg-primary/10"
+                <div className="flex justify-center pt-4">
+                  <Button
+                    size="sm"
+                    className="tech-button rounded-lg w-full"
+                    asChild
+                  >
+                    <a 
+                      href={project.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center"
                     >
-                      <Github className="h-4 w-4 mr-1" />
-                      Code
-                    </Button>
-                    <Button
-                      size="sm"
-                      className="tech-button rounded-lg"
-                    >
-                      <ExternalLink className="h-4 w-4 mr-1" />
-                      Demo
-                    </Button>
-                  </div>
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Visit Website
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>

@@ -35,13 +35,13 @@ const Experience = () => {
       color: "bg-purple-500/10 text-purple-400 border-purple-500/20"
     },
     {
-      title: "Full-Stack Software Developer",
-      company: "Various International Projects",
-      location: "Remote/International",
+      title: "Software Developer",
+      company: "Herat Host IT Services Company",
+      location: "Herat, Afghanistan",
       period: "Development Role",
-      description: "Built scalable web applications and software solutions using modern tech stacks. Collaborated with international teams on diverse projects ranging from e-commerce platforms to data analytics tools.",
+      description: "Created and tested web applications, developed and designed databases and Management Information Systems (MIS). Specialized in troubleshooting application problems and maintaining/updating applications.",
       type: "Software Development",
-      technologies: ["React", "Node.js", "PHP", "Python", "Databases"],
+      technologies: ["Web Development", "Database Design", "MIS", "Application Testing", "Maintenance"],
       color: "bg-orange-500/10 text-orange-400 border-orange-500/20"
     }
   ];

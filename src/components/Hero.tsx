@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Mail, MapPin, Github, Linkedin, Download, ArrowDown } from "lucide-react";
-import portraitImage from "@/assets/masoud-portrait.jpg";
+import { Mail, MapPin, Github, Linkedin, ArrowDown } from "lucide-react";
+import profile from "@/assets/masoud-profile.png";
 import techBackground from "@/assets/tech-background.jpg";
 
 const Hero = () => {
@@ -103,7 +103,7 @@ const Hero = () => {
               {/* Main image container */}
               <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden tech-card animate-glow">
                 <img 
-                  src={portraitImage} 
+                  src={profile} 
                   alt="Masoud Faizi - Computer Science Professional"
                   className="w-full h-full object-cover"
                 />

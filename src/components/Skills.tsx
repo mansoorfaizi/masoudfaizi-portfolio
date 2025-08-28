@@ -20,11 +20,11 @@ const Skills = () => {
       title: "Frontend Development",
       icon: Globe,
       skills: [
-        { name: "HTML5", level: 95, color: "bg-orange-500" },
-        { name: "CSS3", level: 90, color: "bg-blue-500" },
-        { name: "JavaScript", level: 90, color: "bg-yellow-500" },
-        { name: "React", level: 85, color: "bg-cyan-500" },
-        { name: "TypeScript", level: 80, color: "bg-blue-600" }
+        { name: "HTML5", proficiency: "Expert", color: "bg-orange-500/20 text-orange-400 border-orange-500/30" },
+        { name: "CSS3", proficiency: "Advanced", color: "bg-blue-500/20 text-blue-400 border-blue-500/30" },
+        { name: "JavaScript", proficiency: "Advanced", color: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30" },
+        { name: "React", proficiency: "Advanced", color: "bg-cyan-500/20 text-cyan-400 border-cyan-500/30" },
+        { name: "TypeScript", proficiency: "Intermediate", color: "bg-blue-600/20 text-blue-400 border-blue-600/30" }
       ],
       description: "Creating responsive, interactive user interfaces with modern web technologies."
     },
@@ -32,11 +32,11 @@ const Skills = () => {
       title: "Backend Development", 
       icon: Server,
       skills: [
-        { name: "PHP/Laravel", level: 90, color: "bg-indigo-500" },
-        { name: "Node.js", level: 85, color: "bg-green-500" },
-        { name: "Python", level: 80, color: "bg-blue-500" },
-        { name: "Golang", level: 75, color: "bg-cyan-600" },
-        { name: "Express.js", level: 80, color: "bg-gray-600" }
+        { name: "PHP/Laravel", proficiency: "Expert", color: "bg-indigo-500/20 text-indigo-400 border-indigo-500/30" },
+        { name: "Node.js", proficiency: "Advanced", color: "bg-green-500/20 text-green-400 border-green-500/30" },
+        { name: "Python", proficiency: "Advanced", color: "bg-blue-500/20 text-blue-400 border-blue-500/30" },
+        { name: "Golang", proficiency: "Intermediate", color: "bg-cyan-600/20 text-cyan-400 border-cyan-600/30" },
+        { name: "Express.js", proficiency: "Advanced", color: "bg-gray-600/20 text-gray-400 border-gray-600/30" }
       ],
       description: "Building scalable server-side applications and robust API architectures."
     },
@@ -44,10 +44,10 @@ const Skills = () => {
       title: "Databases",
       icon: Database,
       skills: [
-        { name: "MySQL", level: 90, color: "bg-orange-500" },
-        { name: "PostgreSQL", level: 85, color: "bg-blue-600" },
-        { name: "MongoDB", level: 80, color: "bg-green-600" },
-        { name: "Redis", level: 70, color: "bg-red-500" }
+        { name: "MySQL", proficiency: "Expert", color: "bg-orange-500/20 text-orange-400 border-orange-500/30" },
+        { name: "PostgreSQL", proficiency: "Advanced", color: "bg-blue-600/20 text-blue-400 border-blue-600/30" },
+        { name: "MongoDB", proficiency: "Advanced", color: "bg-green-600/20 text-green-400 border-green-600/30" },
+        { name: "Redis", proficiency: "Intermediate", color: "bg-red-500/20 text-red-400 border-red-500/30" }
       ],
       description: "Designing efficient database schemas and optimizing query performance."
     },
@@ -55,10 +55,10 @@ const Skills = () => {
       title: "DevOps & Tools",
       icon: Wrench,
       skills: [
-        { name: "Git", level: 95, color: "bg-orange-600" },
-        { name: "Docker", level: 80, color: "bg-blue-500" },
-        { name: "Linux", level: 85, color: "bg-gray-700" },
-        { name: "AWS", level: 75, color: "bg-yellow-600" }
+        { name: "Git", proficiency: "Expert", color: "bg-orange-600/20 text-orange-400 border-orange-600/30" },
+        { name: "Docker", proficiency: "Advanced", color: "bg-blue-500/20 text-blue-400 border-blue-500/30" },
+        { name: "Linux", proficiency: "Advanced", color: "bg-gray-700/20 text-gray-400 border-gray-700/30" },
+        { name: "AWS", proficiency: "Intermediate", color: "bg-yellow-600/20 text-yellow-400 border-yellow-600/30" }
       ],
       description: "Streamlining development workflows and deployment processes."
     },
@@ -66,10 +66,10 @@ const Skills = () => {
       title: "Big Data & Analytics",
       icon: BarChart3,
       skills: [
-        { name: "Hadoop", level: 75, color: "bg-yellow-500" },
-        { name: "Apache Hive", level: 70, color: "bg-orange-500" },
-        { name: "PySpark", level: 75, color: "bg-orange-600" },
-        { name: "Data Analysis", level: 80, color: "bg-purple-500" }
+        { name: "Hadoop", proficiency: "Intermediate", color: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30" },
+        { name: "Apache Hive", proficiency: "Intermediate", color: "bg-orange-500/20 text-orange-400 border-orange-500/30" },
+        { name: "PySpark", proficiency: "Intermediate", color: "bg-orange-600/20 text-orange-400 border-orange-600/30" },
+        { name: "Data Analysis", proficiency: "Advanced", color: "bg-purple-500/20 text-purple-400 border-purple-500/30" }
       ],
       description: "Processing large datasets and extracting meaningful insights."
     },
@@ -77,10 +77,10 @@ const Skills = () => {
       title: "Specialized Skills",
       icon: Star,
       skills: [
-        { name: "Teaching", level: 95, color: "bg-green-500" },
-        { name: "Telecommunications", level: 85, color: "bg-blue-500" },
-        { name: "Content Moderation", level: 90, color: "bg-purple-500" },
-        { name: "Project Management", level: 80, color: "bg-indigo-500" }
+        { name: "Teaching", proficiency: "Expert", color: "bg-green-500/20 text-green-400 border-green-500/30" },
+        { name: "Telecommunications", proficiency: "Advanced", color: "bg-blue-500/20 text-blue-400 border-blue-500/30" },
+        { name: "Content Moderation", proficiency: "Expert", color: "bg-purple-500/20 text-purple-400 border-purple-500/30" },
+        { name: "Project Management", proficiency: "Advanced", color: "bg-indigo-500/20 text-indigo-400 border-indigo-500/30" }
       ],
       description: "Unique expertise combining technical and soft skills for comprehensive solutions."
     }
@@ -126,35 +126,22 @@ const Skills = () => {
                 </p>
               </CardHeader>
               <CardContent className="space-y-3">
-                {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="space-y-2">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm font-medium text-foreground">{skill.name}</span>
-                      <span className="text-xs text-muted-foreground">{skill.level}%</span>
-                    </div>
-                    <div className="w-full bg-surface-accent rounded-full h-2 overflow-hidden">
-                      <div 
-                        className={`h-full ${skill.color} rounded-full transition-all duration-1000 ease-out`}
-                        style={{ 
-                          width: selectedCategory === category.title || selectedCategory === null 
-                            ? `${skill.level}%` 
-                            : '0%' 
-                        }}
-                      />
-                    </div>
-                  </div>
-                ))}
+                <div className="flex flex-wrap gap-2">
+                  {category.skills.map((skill, skillIndex) => (
+                    <Badge 
+                      key={skillIndex}
+                      className={`px-3 py-1 text-xs font-medium border ${skill.color} transition-all duration-200 hover:scale-105`}
+                    >
+                      {skill.name}
+                    </Badge>
+                  ))}
+                </div>
               </CardContent>
             </Card>
           ))}
         </div>
         
-        {/* Interactive hint */}
-        <div className="text-center mt-12">
-          <p className="text-muted-foreground text-sm">
-            💡 Click on any skill category to see detailed proficiency levels
-          </p>
-        </div>
+
         
         {/* Additional expertise */}
         <div className="mt-16 text-center">
