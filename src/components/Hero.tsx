@@ -95,7 +95,7 @@ const Hero = () => {
           </div>
           
           {/* Image */}
-          <div className="flex justify-center order-1 lg:order-2">
+          <div className="flex justify-center order-1 lg:order-2 mt-8 sm:mt-0">
             <div className="relative">
               {/* Glow effect */}
               <div className="absolute inset-0 rounded-full bg-primary/20 blur-3xl animate-pulse"></div>
