@@ -87,7 +87,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-surface-subtle relative">
+    <section id="skills" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-surface-subtle relative">
       {/* Background pattern */}
       <div className="absolute inset-0 circuit-pattern opacity-10"></div>
       

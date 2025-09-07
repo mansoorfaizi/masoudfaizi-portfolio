@@ -20,7 +20,7 @@ const Hero = () => {
       {/* Circuit pattern overlay */}
       <div className="absolute inset-0 circuit-pattern opacity-30"></div>
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12 sm:pt-16 sm:pb-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-8 order-2 lg:order-1">
@@ -67,28 +67,28 @@ const Hero = () => {
               </Button>
             </div>
             
-            <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 pt-6">
+            <div className="flex flex-col items-center sm:flex-row sm:items-center sm:justify-start gap-6 sm:gap-8 pt-8 sm:pt-6 pb-8 sm:pb-0">
               <div className="flex items-center text-muted-foreground text-sm sm:text-base">
                 <MapPin className="h-4 w-4 mr-2 text-accent" />
                 <span>Berlin, Germany</span>
               </div>
               
-              <div className="flex gap-3 sm:gap-4">
+              <div className="flex gap-4">
                 <a 
                   href="http://linkedin.com/in/masoud-faizi-b16611135" 
-                  className="p-2 rounded-lg bg-surface-elevated border border-border hover:border-primary transition-all duration-200 hover:bg-primary/10 group"
+                  className="p-3 sm:p-2 rounded-lg bg-surface-elevated border border-border hover:border-primary transition-all duration-200 hover:bg-primary/10 group"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Linkedin className="h-4 w-4 sm:h-5 sm:w-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                  <Linkedin className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
                 </a>
                 <a 
                   href="https://github.com/masoudfaizi" 
-                  className="p-2 rounded-lg bg-surface-elevated border border-border hover:border-primary transition-all duration-200 hover:bg-primary/10 group"
+                  className="p-3 sm:p-2 rounded-lg bg-surface-elevated border border-border hover:border-primary transition-all duration-200 hover:bg-primary/10 group"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Github className="h-4 w-4 sm:h-5 sm:w-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                  <Github className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
                 </a>
               </div>
             </div>
@@ -122,10 +122,10 @@ const Hero = () => {
         </div>
         
         {/* Scroll indicator */}
-        <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2">
-          <div className="flex flex-col items-center space-y-2 text-muted-foreground">
-            <span className="text-xs sm:text-sm">Scroll to explore</span>
-            <ArrowDown className="h-4 w-4 sm:h-5 sm:w-5 animate-bounce" />
+        <div className="absolute bottom-8 sm:bottom-8 left-1/2 transform -translate-x-1/2 mt-20 sm:mt-12">
+          <div className="flex flex-col items-center space-y-3 text-muted-foreground">
+            <span className="text-sm font-medium">Scroll to explore</span>
+            <ArrowDown className="h-5 w-5 animate-bounce" />
           </div>
         </div>
       </div>

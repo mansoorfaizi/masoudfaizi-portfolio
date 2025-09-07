@@ -67,7 +67,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 relative">
+    <section id="experience" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <div className="inline-block p-2 bg-primary/10 rounded-lg mb-4">

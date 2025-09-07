@@ -3,7 +3,7 @@ import { GraduationCap, User, MapPin, Calendar } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-surface-subtle relative">
+    <section id="about" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-surface-subtle relative">
       {/* Background pattern */}
       <div className="absolute inset-0 circuit-pattern opacity-10"></div>
       
