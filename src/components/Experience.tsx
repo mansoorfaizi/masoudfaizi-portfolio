@@ -15,6 +15,26 @@ const Experience = () => {
       color: "bg-blue-500/10 text-blue-400 border-blue-500/20"
     },
     {
+      title: "Software Engineer",
+      company: "Urooj Technology",
+      location: "Remote",
+      period: "2025 - Present",
+      description: "Developing innovative software solutions and leading technical projects in a dynamic technology environment. Contributing to cutting-edge applications and maintaining high-quality code standards while collaborating with distributed teams.",
+      type: "Software Engineering",
+      technologies: ["Software Development", "Technical Leadership", "Remote Collaboration", "Innovation"],
+      color: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
+    },
+    {
+      title: "Software Engineer",
+      company: "AZ-Dev Tech",
+      location: "Remote",
+      period: "2023 - 2025",
+      description: "Developed and maintained scalable software solutions, collaborated with cross-functional teams to deliver high-quality applications, and contributed to the full software development lifecycle from planning to deployment.",
+      type: "Software Engineering",
+      technologies: ["Full-Stack Development", "Software Architecture", "Team Collaboration", "SDLC"],
+      color: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20"
+    },
+    {
       title: "Computer Science Lecturer",
       company: "Herat University",
       location: "Herat, Afghanistan",
@@ -26,9 +46,9 @@ const Experience = () => {
     },
     {
       title: "VAS/NSS Engineer",
-      company: "Telecommunications Industry",
+      company: "AWCC",
       location: "Afghanistan",
-      period: "Engineering Role",
+      period: "Telecommunications Role",
       description: "Specialized in Value Added Services and Network Switching Subsystem engineering, optimizing telecom infrastructure, implementing network solutions, and ensuring system reliability.",
       type: "Telecommunications",
       technologies: ["Network Engineering", "VAS", "System Design"],
@@ -57,7 +77,7 @@ const Experience = () => {
             <span className="gradient-text">Professional Experience</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            A diverse career journey spanning software development, telecommunications, 
+            A diverse career journey spanning software engineering, telecommunications, 
             education, and content moderation across international markets.
           </p>
         </div>
